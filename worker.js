@@ -4,8 +4,8 @@ export default {
       try {
         const { prompt } = await request.json();
 
-        const CLOUDFLARE_ACCOUNT_ID = '08213166c7dfbe36381d0b2633b4050c'; // Your Account ID
-        const CLOUDFLARE_API_TOKEN = 'rCleNftWKm0KmPWvscEMPJ-qPaY4R95uVMuErcYU'; // Your API Token
+        const CLOUDFLARE_ACCOUNT_ID = ''; // Your Account ID
+        const CLOUDFLARE_API_TOKEN = ''; // Your API Token
         const CLOUDFLARE_MODEL_NAME = '@cf/openai/gpt-oss-120b';
 
         const aiResponse = await fetch(`https://api.cloudflare.com/client/v4/accounts/${CLOUDFLARE_ACCOUNT_ID}/ai/run/${CLOUDFLARE_MODEL_NAME}`, {
@@ -48,3 +48,4 @@ export default {
     return new Response('Not Found', { status: 404 });
   },
 };
+
