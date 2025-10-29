@@ -11,7 +11,7 @@ async function sendMessage() {
 
     try {
         // IMPORTANT: Replace 'YOUR_WORKER_URL' with the actual URL of your deployed Cloudflare Worker
-        const WORKER_URL = 'https://test.study2882.dpdns.org/chat';
+        const WORKER_URL = 'https:///chat';
         const response = await fetch(WORKER_URL, {
             method: 'POST',
             headers: {
@@ -63,3 +63,4 @@ userInput.addEventListener('keypress', (event) => {
 
 // Initial welcome message
 appendMessage('Hello! How can I help you today?', 'ai');
+
